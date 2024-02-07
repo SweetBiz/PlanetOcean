@@ -2,7 +2,7 @@
 	"FileVersion": 3,
 	"Version": 1,
 	"VersionName": "1.0",
-	"FriendlyName": "WavesGenerator",
+	"FriendlyName": "PlanetOcean",
 	"Description": "Gerstner waves for planets and flat worlds ",
 	"Category": "Other",
 	"CreatedBy": "Alexander Alikin",
@@ -16,7 +16,7 @@
 	"Installed": false,
 	"Modules": [
 		{
-			"Name": "WavesGenerator",
+			"Name": "PlanetOcean",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
 		}

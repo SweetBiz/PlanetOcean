@@ -1,5 +1,5 @@
-# WavesGenerator
-Gerstner waves for planets and flat worlds
+# PlanetOcean Plugin
+Gerstner waves for planets and flat worlds for Unreal Engine 5.3+
 
 ![PlanetOcean](https://github.com/script526/WavesGenerator/assets/32175853/5491053b-44b8-4ed3-be87-ea0fd7f21d0e)
 ![FlatOcean](https://github.com/script526/WavesGenerator/assets/32175853/fc2e2377-ac1b-4866-a141-28bae14708a2)

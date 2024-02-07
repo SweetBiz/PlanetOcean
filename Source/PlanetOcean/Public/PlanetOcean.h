@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "Modules/ModuleManager.h"
 
-class FWavesGeneratorModule : public IModuleInterface
+class FPlanetOceanModule : public IModuleInterface
 {
 public:
 
