@@ -1,23 +1,23 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "WavesGenerator.h"
+#include "PlanetOcean.h"
 #include "Interfaces/IPluginManager.h"
 
 
-#define LOCTEXT_NAMESPACE "FWavesGeneratorModule"
+#define LOCTEXT_NAMESPACE "FPlanetOceanModule"
 
-void FWavesGeneratorModule::StartupModule()
+void FPlanetOceanModule::StartupModule()
 {
-	const IPlugin& Plugin = *IPluginManager::Get().FindPlugin("WavesGenerator");
+	const IPlugin& Plugin = *IPluginManager::Get().FindPlugin("PlanetOcean");
 	const FString ShaderDirectory = FPaths::ConvertRelativePathToFull(Plugin.GetBaseDir() / "Shaders/Private");
 	AddShaderSourceDirectoryMapping("/Shaders", ShaderDirectory);
 }
 
-void FWavesGeneratorModule::ShutdownModule()
+void FPlanetOceanModule::ShutdownModule()
 {
 	ResetAllShaderSourceDirectoryMappings();
 }
 
 #undef LOCTEXT_NAMESPACE
 	
-IMPLEMENT_MODULE(FWavesGeneratorModule, WavesGenerator)
+IMPLEMENT_MODULE(FPlanetOceanModule, PlanetOcean)

@@ -3,9 +3,9 @@
 using UnrealBuildTool;
 using UnrealBuildTool.Rules;
 
-public class WavesGenerator : ModuleRules
+public class PlanetOcean : ModuleRules
 {
-	public WavesGenerator(ReadOnlyTargetRules Target) : base(Target)
+	public PlanetOcean(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		
