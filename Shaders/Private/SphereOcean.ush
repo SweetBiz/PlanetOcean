@@ -212,8 +212,7 @@ struct PlanetGerstner
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////
     
 WaveOutput CalculateGerstnerWavesOnSphere(
-    FMaterialParams MatParams,
-    float3 TriplanarMask)
+    FMaterialParams MatParams)
     {
         // Passing VertexNormalWS node doesn't work (everything is zero), so here's a workaround
         // This means it will work only on a perfect sphere and will fail on a slightly different shape
@@ -226,8 +225,6 @@ WaveOutput CalculateGerstnerWavesOnSphere(
             OutWaves.Normal = SphereVertexNormal;
             OutWaves.FoamMask = 0.f;
         }
-        
-        //TriplanarMask = PlanetHelpers::CalculateTriplanarMask(SphereVertexNormal, 20.f);
             
         float ProjectionX, ProjectionY;
         FTriplanar TriplanarPos = PlanetHelpers::GetTriplanarPosition(MatParams._Position, ProjectionX, ProjectionY);
@@ -299,8 +296,7 @@ Time,
 FoamStrength);
 
 WaveOutput FinalWaves = Waves.CalculateGerstnerWavesOnSphere(
-    MatParams,
-    TriplanarMask);
+    MatParams);
 
 Normal = FinalWaves.Normal;
 FoamMask = FinalWaves.FoamMask;
