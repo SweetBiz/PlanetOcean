@@ -4,9 +4,9 @@
 // Facebook: https://www.facebook.com/aaalikin/
 // Discord: scrappy526
 
-#include "/Shaders/DataTypes.ush"
-#include "/Shaders/Utils.ush"
-#include "/Shaders/Gerstner.ush"
+#include "/PlanetOcean/Shaders/DataTypes.ush"
+#include "/PlanetOcean/Shaders/Utils.ush"
+#include "/PlanetOcean/Shaders/Gerstner.ush"
 
 struct PlanetGerstner
 {
