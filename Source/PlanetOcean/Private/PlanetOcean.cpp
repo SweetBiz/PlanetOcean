@@ -10,7 +10,7 @@ void FPlanetOceanModule::StartupModule()
 {
 	const IPlugin& Plugin = *IPluginManager::Get().FindPlugin("PlanetOcean");
 	const FString ShaderDirectory = FPaths::ConvertRelativePathToFull(Plugin.GetBaseDir() / "Shaders/Private");
-	AddShaderSourceDirectoryMapping("/Shaders", ShaderDirectory);
+	AddShaderSourceDirectoryMapping("/PlanetOcean/Shaders", ShaderDirectory);
 }
 
 void FPlanetOceanModule::ShutdownModule()
