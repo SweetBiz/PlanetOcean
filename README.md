@@ -18,6 +18,8 @@ Gerstner waves for planets and flat worlds for Unreal Engine 5.3+
 	- Specular highlight mask
 	- Sun reflection mask
 # Planned
+- Distance based wave count reduction
+- Wave presets blending
 - Buoyancy
 - Planet gravity using Unreal's native movement component
 - Subsurface scattering
